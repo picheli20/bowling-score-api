@@ -23,6 +23,7 @@
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/swagger": "^11.2.3",
     "bowling-score-lib": "^0.0.2",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
@@ -63,6 +64,9 @@
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
+    "transformIgnorePatterns": [
+      "node_modules/(?!bowling-score-lib)"
+    ],
     "collectCoverageFrom": [
       "**/*.(t|j)s"
     ],
